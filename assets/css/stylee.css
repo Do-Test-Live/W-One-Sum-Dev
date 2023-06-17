@@ -7,7 +7,7 @@ section{
 }
 
 p{
-    color: #555;
+    color: #a7ab9d;
 }
 
 h5{
@@ -15,10 +15,14 @@ h5{
 }
 
 h4{
-    color: #555;
+    color: #141414;
+}
+
+.heading{
+    color: #878c7b !important;
 }
 .foont{
-    color: #a7ab9c;
+    color: #858585;
     font-size: 20px;
 }
 
@@ -52,6 +56,8 @@ h4{
     color: #878c7b;
     font-size: 14px;
     text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .carousel-item {
@@ -103,7 +109,7 @@ h4{
 }
 
 .carousel-caption h1 {
-    margin-top: 50%;
+    margin-top: 46%;
 }
 
 #gallery1 {
@@ -353,12 +359,14 @@ h4{
 
 .social-icons li {
     list-style: none;
-    padding-right: 10px;
+    padding-right: 25px;
 }
 
-.social-icons i {
-    /* Adjust the styles for the icons as needed */
+.social-icons li i {
+    font-size: 25px;
+    color: #858585;
 }
+
 
 .social {
     display: flex;
@@ -368,6 +376,7 @@ h4{
 .social li {
     list-style: none;
     padding-right: 20px;
+    color: #a7ab9d;
 }
 
 .header_content{
@@ -399,13 +408,148 @@ h4{
 .copyright p{
     font-size: 12px;
     margin-bottom: 5px;
-}
-.bcolor{
-    border-bottom:5px solid red;
-    width: 13%;
+    color: #858585;
 }
 
+.line {
+    width: 10%;
+    height: 5px;
+    border: none;
+    border-color: #ef5122;
+    background-color: #ef5122;
+    border-radius: 10px;
+    margin: 0;
+    opacity: 1;
+}
+
+/*side menu*/
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #dbddd7; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    margin-left: 5.3%;
+    margin-right: 5.3%;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #a8a8a6;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    margin-left: 30%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #878c7b;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 70px;
+    }
+}
+
+.social-icons-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-menu li {
+    list-style: none;
+    padding-right: 25px;
+}
+
+.social-icons-menu li a i {
+    color: #a8a8a6;
+}
+
+.social-icons-menu li a i:hover {
+    color: #878c7b;
+}
+
+.side-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 60%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.menu1-desc{
+    height: 560px;
+    margin-top: -110px;
+    margin-left: -110px;
+}
+
+.footer-text{
+    color: #858585;
+}
+.second-text{
+    margin-top: 25px;
+}
 
 
 
 
+@media screen and (max-width: 992px) {
+    p{
+        font-size: 25px;
+    }
+    .foont {
+        font-size: 25px;
+    }
+    .carousel-caption h1 {
+        font-size: 50px;
+    }
+    .second-text{
+        margin-top: 60px !important;
+    }
+    .map-section{
+        margin-top: 60px;
+    }
+    .social li{
+        font-size: 20px;
+    }
+    .copyright p{
+        font-size: 18px;
+    }
+    .menu-side-image{
+        display: none;
+    }
+    .menu-text{
+        font-size: 25px;
+    }
+}

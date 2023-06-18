@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Sum Dev</title>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/stylee.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="side-menu">
+        <!--<p class="menu-text">menu</p>-->
+        <a class="menu menu-text" id="menu" onclick="openNav()">MENU</a>
+    </div>
+
+    <div class="content-area">
+        <section class="gallery-section">
+            <!--Sortable Masonry-->
+            <div class="container-fluid">
+                <div class="gallery1">
+                    <img class="img-responsive" src="assets/images/gallery/g1.jpg">
+                    <img class="img-responsive" src="assets/images/gallery/g2.jpg">
+                </div>
+            </div>
+            <!--Sortable Masonry-->
+            <div class="container-fluid">
+                <div class="gallery1">
+                    <img class="img-responsive" src="assets/images/gallery/g1.jpg">
+                    <img class="img-responsive" src="assets/images/gallery/g2.jpg">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <ul class="social-icons">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-youtube"></i></li>
+                            <li><i class="fa-brands fa-whatsapp"></i></li>
+                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><i class="fa-brands fa-weixin"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="footer-text">旗下業務</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="social">
+                        <li>GRANDE WORK+</li>
+                        <li>GRANDE STUDIO</li>
+                        <li>GRANDE BRAND+</li>
+                    </ul>
+                </div>
+                <div class="row copyright text-center">
+                    <p>©2022 Grande Development Limited.</p>
+                    <p>版權所有</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<!--menu slider-->
+<div class="overlay" id="myNav">
+
+    <!-- Button to close the overlay navigation -->
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <a href="index.html">首頁</a>
+                <a href="#">關於我們</a>
+                <a href="works.html">作品</a>
+                <a href="#">聯絡我們</a>
+
+                <ul class="social-icons-menu mt-5">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-weixin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-start menu-side-image">
+                <img class="img-fluid menu1-desc" src="assets/images/menu/1.webp">
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script>
+    // Set the interval duration in milliseconds (e.g., 5000ms = 5 seconds)
+    const intervalDuration = 5000;
+
+    // Start the carousel interval
+    const carousel = document.querySelector('#carouselExampleCaptions');
+    const carouselInstance = new bootstrap.Carousel(carousel, {
+        interval: intervalDuration
+    });
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src='assets/js/custom.js'></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

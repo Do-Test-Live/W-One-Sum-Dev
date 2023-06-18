@@ -639,3 +639,16 @@ h4{
         font-size: 25px;
     }
 }
+
+.text-title{
+    color: #a8a8a6;
+    font-size: 30px;
+}
+
+.works-title{
+    color: #a8a8a6;
+}
+
+a {
+    color: #dbddd7;
+}
